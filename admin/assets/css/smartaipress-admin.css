@@ -1,0 +1,893 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+#smartaipress-panel {
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+}
+
+#smartaipress-panel a {
+    box-shadow: none;
+    text-decoration: none;
+}
+
+#smartaipress-panel .smartaipress-dashboard-background {
+    background: -o-linear-gradient(50deg, #2f2a7d 0, #4b098d 100%);
+    background: linear-gradient(50deg, #2f2a7d 0, #4b098d 100%);
+    position: absolute;
+    min-height: 350px;
+    margin-left: -20px;
+    width: calc(100% + 20px);
+}
+
+ #smartaipress-panel .sap-container-fluid {
+    display: block;
+    margin-left: 3.25rem;
+    width: calc(100% - 4.5rem);
+ }
+
+#smartaipress-panel .sap-container-flex {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0.75rem;
+    transition: all .2s ease-in-out;
+}
+
+.smartaipress-uppercase {
+    text-transform: uppercase !important;
+}
+
+.smartaipress-weight-700 {
+    font-weight: 700 !important;
+}
+
+.smartaipress-display-none,
+.sap-hidden {
+    display: none;
+}
+
+.sap-required {
+    color: red;
+}
+
+.sap-form-control {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #d2d6da;
+    appearance: none;
+    border-radius: 0.5rem;
+    transition: box-shadow .15s ease,border-color .15s ease;
+}
+
+.sap-form-group {
+    display: flex;
+    align-items: center;
+}
+
+/* Horizontal line */
+hr {
+    border-top: none;
+    opacity: .25;
+    height: 1px;
+}
+
+hr.sap-horizontal {
+    background-color: transparent;
+}
+
+hr.sap-horizontal.sap-dark {
+    background-image: linear-gradient(90deg,transparent,rgba(0,0,0,.4),transparent);
+}
+
+/* Margins */
+.sap-margin-0 {
+    margin: 0!important;
+}
+
+.sap-mx-0 {
+    margin-left: 0!important;
+    margin-right: 0!important;
+}
+
+.sap-my-3 {
+    margin-top: 1rem!important;
+    margin-bottom: 1rem!important;
+}
+
+.sap-mb-10 {
+    margin-bottom: 10px !important;
+}
+
+.sap-mb-20 {
+    margin-bottom: 20px !important;
+}
+
+/* Paddings */
+.sap-padding-top-0 {
+    padding-top: 0!important;
+}
+
+/* Display */
+.sap-display-flex {
+    display: flex;
+}
+
+.sap-align-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.sap-justify-content-between {
+    justify-content: space-between;
+}
+
+/* Gradients */
+.sap-bg-gradient-primary {
+    background-image: linear-gradient(310deg,#5e72e4,#825ee4);
+}
+
+/* Shadows */
+.sap-shadow {
+    box-shadow: 0 .25rem .375rem -.0625rem hsla(0,0%,8%,.12),0 .125rem .25rem -.0625rem hsla(0,0%,8%,.07)!important;
+}
+
+/* Borders */
+.sap-border-lg {
+    border-radius: 0.75rem;
+}
+
+/* Icons */
+.sap-icon {
+    align-items: center;
+    justify-content: center;
+    fill: currentColor;
+    stroke: none;
+    display: flex;
+    color: #111;
+    height: 1em;
+    width: 1em;
+}
+
+.sap-icon-shape {
+    color: #fff;
+    opacity: .8;
+    position: relative;
+    width: 48px;
+    height: 48px;
+    background-position: 50%;
+    border-radius: 0.75rem;
+}
+
+.sap-icon-lg {
+    width: 64px;
+    height: 64px
+}
+
+/* Texts */
+.sap-text-xs {
+    font-size: .75rem!important;
+    line-height: 1.25;
+}
+
+.sap-text-center {
+    text-align: center !important;
+}
+
+/* Buttons */
+.smartaipress-btn {
+    font-weight: 400;
+    font-size: .875rem;
+    line-height: 1.5;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(50,50,93,.1), 0 1px 3px rgba(0,0,0,.08);
+    color: #fff;
+    cursor: pointer;
+    letter-spacing: -.025rem;
+    border-radius: 3px;
+    transition: all .15s ease-in;
+    text-transform: none;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.smartaipress-btn:hover {
+    color: #fff;
+}
+
+.smartaipress-btn:focus {
+    color: #fff;
+    box-shadow: 0 0 0 1px #e36845, 0 0 2px 1px rgb(224 78 91);
+    outline: 1px solid transparent;
+}
+
+.smartaipress-btn > i {
+    vertical-align: middle;
+}
+
+.smartaipress-btn-gradient-orange {
+    background-image: linear-gradient(310deg,#f5365c,#f56036);
+}
+
+/* Loader */
+.sap-loader-box {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(15,15,15,0.5);
+    border-radius: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    box-shadow: 1px 1px 1px 0px darkslategrey;
+}
+
+.sap-loader {
+    border: 1px solid white;
+    border-radius: 50%;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    width: 80px;
+    height: 80px;
+    animation-name: loading;
+    animation-duration: 700ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.sap-loader-text {
+    margin-top: 10px;
+    padding-top: 10px;
+    color: lightgrey;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    animation-name: fading;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes loading{
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+  
+@keyframes fading {
+    0%, 100% {
+      opacity: 0.05;
+    }
+    50% {
+      opacity: 0.95;
+    }
+}
+
+/* Alerts */
+.smartaipress-alert {
+    position: relative;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
+    color: #fff;
+    font-weight: bold;
+    z-index: 999;
+}
+
+.smartaipress-alert.smartaipress-alert-primary {
+    background-image: linear-gradient(310deg,#5e72e4,#673bde);
+    background-color: #dfe3fa;
+    border-color: #cfd5f7;
+}
+
+/* Tooltips */
+#smartaipress-panel .sap-tooltip-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#smartaipress-panel .sap-tooltip {
+    text-align: left !important;
+    visibility: hidden;
+    width: 200px;
+    background-image: linear-gradient(310deg,#f5365c,#f56036);
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    padding: 0.5rem;
+}
+
+#smartaipress-panel .sap-tooltip-content {
+    overflow-y: hidden;
+    word-wrap: normal;
+}
+
+#smartaipress-panel .sap-tooltip-container:hover .sap-tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Buttons */
+#smartaipress-panel [type=button],
+#smartaipress-panel [type=reset],
+#smartaipress-panel [type=submit],
+#smartaipress-panel button {
+    appearance: button;
+    -webkit-appearance: button;
+}
+
+#smartaipress-panel button:not(:disabled) {
+    cursor: pointer;
+}
+
+#smartaipress-panel button:not([class*=btn-outline-]) {
+    border: 0;
+}
+
+#smartaipress-panel input:focus,
+#smartaipress-panel select:focus,
+#smartaipress-openai input:focus,
+#smartaipress-openai select:focus {
+    border-color: #7784ed;
+    box-shadow: 0 0 0 1px #7784ed;
+}
+
+#smartaipress-btn-submit {
+    font-weight: 600;
+    font-size: .875rem;
+    line-height: 1.5;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    padding: 0.625rem 1.25rem;
+    background-image: linear-gradient(310deg,#f5365c,#f56036);
+    box-shadow: 0 4px 6px rgba(50,50,93,.1), 0 1px 3px rgba(0,0,0,.08);
+    color: #fff;
+    letter-spacing: -.025rem;
+    border-radius: 0.5rem;
+    transition: all .15s ease-in;
+    text-transform: none;
+}
+
+/* Widths */
+#smartaipress-panel .width-10 {
+    width: 10%;
+}
+
+#smartaipress-panel .width-15 {
+    width: 15%;
+}
+
+#smartaipress-panel .width-25 {
+    width: 25%;
+}
+
+#smartaipress-panel .width-50 {
+    width: 50%;
+}
+
+/* Labels */
+#smartaipress-panel label {
+    display: block;
+    font-weight: 400;
+    color: #344767;
+}
+
+#smartaipress-panel label span {
+    display: block;
+    font-size: 0.75rem;
+    color: #67748e;
+}
+
+/* Tables */
+#smartaipress-panel table {
+    border-color: #e9ecef;
+    color: #67748e;
+    vertical-align: top;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+#smartaipress-panel table tbody {
+    font-weight: 400;
+    color: #67748e;
+}
+
+#smartaipress-panel table thead,
+#smartaipress-panel table tbody,
+#smartaipress-panel table tfoot,
+#smartaipress-panel table tr,
+#smartaipress-panel table th {
+    border-color: #e9ecef;
+    border-style: solid;
+    border-width: 0;
+}
+
+#smartaipress-panel table th,
+#smartaipress-panel table td {
+    text-align: left;
+}
+
+#smartaipress-panel table>:not(caption)>*>* {
+    padding: 0.5rem;
+    background-color: transparent;
+}
+
+#smartaipress-panel table th span,
+#smartaipress-panel table th label{
+    font-weight: 400;
+}
+
+#smartaipress-panel table th p {
+    font-weight: 400;
+    font-size: 0.75rem;
+    margin: 0;
+}
+
+ /**
+  * Side Navigation
+  */
+#smartaipress-sidenav {
+    background: #fff;
+    box-shadow: 0 0 2rem 0 rgba(136,152,170,.15);
+    border-radius: 1rem;
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 15.625rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0;
+    transition: all .2s ease-in-out;
+    transform: translateX(0);
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    z-index: 9989;
+}
+
+#smartaipress-sidenav.sidenav-hidden {
+    transform: translateX(-30.125rem);
+}
+
+#smartaipress-sidenav i.sap-hide-sidenav {
+    border-radius: 50%;
+    display: none;
+    font-weight: 900;
+    position: absolute;
+    color: #ff0000;
+    cursor: pointer;
+    padding: 0.25rem;
+    top: 10px;
+    right: 10px;
+    opacity: .5;
+    animation: pulse 2s infinite;
+    transform: scale(1);
+    width: 20px;
+    height: 20px;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(255, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
+
+#smartaipress-sidenav .sap-sidenav-header {
+    height: 8.875rem;
+}
+
+#smartaipress-sidenav .sap-logo {
+    color: #344767;
+    font-size: .875rem;
+    display: block;
+    padding: 1.5rem 2rem;
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
+    text-align: center;
+}
+
+#smartaipress-sidenav .sap-logo img {
+    display: block;
+    transition: all .2s ease-in-out;
+    max-width: 100%;
+    max-height: 5rem;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+#smartaipress-sidenav .sap-logo span {
+    transition: all .2s ease-in-out;
+    font-weight: 600;
+}
+
+#smartaipress-sidenav hr {
+    background-image: linear-gradient(90deg,transparent,rgba(0,0,0,.4),transparent);
+    height: 1px;
+    margin: 1rem 0;
+    color: inherit;
+    border: 0;
+    opacity: .25;
+}
+
+#smartaipress-sidenav ul {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+#smartaipress-sidenav ul li {
+    width: 100%;
+}
+
+#smartaipress-sidenav ul li h6 {
+    font-weight: 700;
+    font-size: .75rem;
+    line-height: 1.25;
+    text-transform: uppercase;
+    padding-left: 1.5rem;
+    margin: 0;
+    margin-left: 0.5rem;
+    opacity: .6;
+}
+
+#smartaipress-sidenav ul li a {
+    color: #344767;
+    padding-top: 0.675rem;
+    padding-bottom: 0.675rem;
+    margin: 0 0.5rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+#smartaipress-sidenav ul li a.active {
+    font-weight: 600;
+    color: #344767;
+    background-color: #f6f9fc;
+    box-shadow: none;
+    border-radius: 0.5rem;
+}
+
+#smartaipress-sidenav ul li a .sap-nav-icon {
+    padding: 10px;
+}
+
+#smartaipress-sidenav ul li a .sap-nav-icon i {
+    top: 0;
+}
+
+#smartaipress-sidenav .sap-sidenav-footer {
+    margin: 1rem;
+}
+
+#smartaipress-sidenav .sap-sidenav-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid #fff;
+    border-radius: 1rem;
+}
+
+#smartaipress-sidenav .sap-sidenav-card img {
+    margin: 0 auto;
+    width: 60%;
+}
+
+#smartaipress-sidenav .sap-sidenav-card-body .sap-docs-info {
+    flex: 1 1 auto;
+    color: #344767;
+    text-align: center;
+    padding: 1rem;
+    padding-top: 0;
+    width: 100%;
+}
+
+#smartaipress-sidenav .sap-sidenav-card-body h6 {
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.625;
+    margin: 0;
+}
+
+#smartaipress-sidenav .sap-sidenav-card-body p {
+    margin: 0;
+}
+
+#smartaipress-sidenav .sap-sidenav-btn {
+    background-color: #344767;
+    border-radius: 8px;
+    display: block;
+    text-align: center;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -khtml-border-radius: 8px;
+    cursor: pointer;
+    color: #fff;
+    letter-spacing: -.025rem;
+    text-transform: none;
+    box-shadow: 0 4px 6px rgba(50,50,93,.1), 0 1px 3px rgba(0,0,0,.08);
+    margin-bottom: 1rem;
+    transition: all .15s ease-in;
+    padding: 0.5rem 2rem;
+    user-select: none;
+}
+
+/**
+ * Main Content
+ */
+#smartaipress-main-content {
+    display: block;
+    position: relative;
+}
+
+.smartaipress-openai-chart {
+    display: block;
+    position: relative;
+    max-height: 500px;
+}
+
+/**
+ * Top Navbar
+ */
+#smartaipress-top-navbar {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 1rem;
+    box-shadow: none;
+    transition: box-shadow .25s ease-in,background-color .25s ease-in;
+    position: relative;
+    padding-right: 0;
+    padding-left: 0;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    z-index: 1020;
+}
+
+#smartaipress-top-navbar .sap-container-fluid {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 1rem;
+    width: 100%;
+}
+
+.sap-sidenav-toggler {
+    display: none;
+}
+
+.sap-sidenav-toggler,
+.sap-sidenav-toggler-inner {
+    width: 18px;
+}
+
+.sap-sidenav-toggler a {
+    font-weight: 400;
+}
+
+.sap-sidenav-toggler .sap-sidenav-toggler-line {
+    background-color: #fff;
+    transition: all .15s ease;
+    border-radius: 0.125rem;
+    position: relative;
+    display: block;
+    height: 2px;
+}
+
+.sap-sidenav-toggler .sap-sidenav-toggler-line:not(:last-child) {
+    margin-bottom: 3px;
+}
+
+body.sap-sidenav-show #smartaipress-panel main {
+    pointer-events: none;
+    filter: blur(5px);
+}
+
+body.sap-sidenav-show .sap-sidenav-toggler-line:first-child, 
+body.sap-sidenav-show .sap-sidenav-toggler-line:last-child {
+    width: 13px;
+    transform: translateX(5px);
+}
+
+/* Card */
+.sap-card {
+    box-shadow: 0 0 2rem 0 rgba(136,152,170,.15);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid rgba(0,0,0,.125);;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.sap-card .sap-card-header {
+    padding: 1.5rem;
+}
+
+.sap-card .sap-card-header h5 {
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.375;
+    margin: 0;
+    margin-bottom: 0.5rem;
+    color: #344767;
+}
+
+.sap-card .sap-card-header p {
+    color: #66758E;
+    margin: 0;
+}
+
+.sap-card .sap-card-body {
+    flex: 1 1 auto;
+    padding: 1.5rem;
+}
+
+/* Settings Table */
+#smartaipress-settings-table th {
+    max-width: 30%;
+    width: 100%;
+}
+
+.smartaipress-timer {
+    font-weight: 200;
+    background: #000;
+    border: 2px solid #e2604b;
+    color: #fff;
+    text-align: center;
+    padding: 2px;
+    width: 40px;
+}
+
+.chart-filters-wrapper {
+    display: flex;
+}
+
+.chart-filter-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+#total-days-error, #dates-error-box {
+    height: 18px;
+}
+
+/* Media Queries */
+@media (min-width: 1200px) {
+    #smartaipress-main-content {
+        margin-left: 13.625rem;
+    }
+}
+
+@media only screen and (max-width: 1180px) {
+    #smartaipress-panel .sap-container-fluid {
+        margin-left: 17rem;
+        width: calc(100% - 290px);
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    #smartaipress-sidenav {
+        transform: translateX(-30.125rem);
+    }
+
+    body.sap-sidenav-show #smartaipress-sidenav {
+        transform: translateX(0);
+    }
+
+    #smartaipress-sidenav i.sap-hide-sidenav {
+        display: block;
+    }
+
+    .sap-sidenav-toggler {
+        display: block;
+    }
+
+    #smartaipress-panel .sap-container-fluid {
+        width: calc(100% - 1.25rem);
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 782px) {
+    #smartaipress-sidenav {
+        margin-top: 4rem;
+        margin-bottom: 1rem;
+    }
+    #smartaipress-panel table>:not(caption)>*>* {
+        display: block;
+        width: 100%;
+    }
+    #smartaipress-settings-table th {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+/* Tabs */
+.smartaipress-tabs {
+    display: flex;
+    padding: 10px;
+    padding-bottom: 0;
+    border-bottom: 1px solid #c7c7c7;
+}
+
+.smartaipress-tab {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 5px;
+}
+
+.smartaipress-tab.smartaipress-tab-active {
+    font-weight: 600;
+    background-color: #fff;
+    border-top: 1px solid #c7c7c7;
+    border-left: 1px solid #c7c7c7;
+    border-right: 1px solid #c7c7c7;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.smartaipress-tab-content {
+    padding: 10px;
+    background-color: #fff;
+    display: none;
+}
+
+.smartaipress-tab-content.smartaipress-tab-active {
+    display: block;
+}
+
+.swal2-backdrop-show {
+    z-index: 99999 !important;
+}

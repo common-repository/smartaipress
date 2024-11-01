@@ -1,0 +1,271 @@
+input[name=post_title] {
+    position: relative;
+}
+
+/* Gutenberg Editor Toolbar Button */
+.smartaipress-btn-generate-gutenberg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: .875rem;
+    line-height: 1.5;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    padding: 7px 10px;
+    background:#2f2a7d;
+    box-shadow: 0 4px 6px rgba(50,50,93,.1), 0 1px 3px rgba(0,0,0,.08);
+    color: #fff;
+    cursor: pointer;
+    letter-spacing: -.025rem;
+    border: 0 transparent;
+    border-radius: 3px;
+    transition: all .15s ease-in;
+    text-transform: none;
+    vertical-align: middle;
+    margin: 0 auto;
+}
+
+.smartaipress-btn-generate-gutenberg > img {
+    vertical-align: middle;
+    margin-right: 5px;
+    height: 16px;
+    width: 16px;
+}
+
+/* Button Generate */
+.smartaipress-btn-generate {
+    font-weight: 400;
+    font-size: .875rem;
+    line-height: 1.5;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    padding: 10px;
+    background-image: linear-gradient(310deg,#f5365c,#f56036);
+    box-shadow: 0 4px 6px rgba(50,50,93,.1), 0 1px 3px rgba(0,0,0,.08);
+    color: #fff;
+    cursor: pointer;
+    letter-spacing: -.025rem;
+    border: 0 transparent;
+    border-radius: 3px;
+    transition: all .15s ease-in;
+    text-transform: none;
+    vertical-align: middle;
+}
+
+.smartaipress-btn-generate.disabled,
+.smartaipress-btn-generate:disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.smartaipress-btn-generate:not(:disabled) {
+    cursor: pointer;
+}
+
+.smartaipress-btn-generate:not([class*=btn-outline-]) {
+    border: 0;
+}
+
+.smartaipress-animated-360 {
+    animation: smartaipress-rotation 1s infinite linear;
+}
+
+@keyframes smartaipress-rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#smartaipress-trigger-button-wrapper {
+    display: block;
+    position: relative;
+}
+
+.smartaipress-content-generator-button {
+    appearance: button;
+    -webkit-appearance: button;
+    background: #2f277e;
+    background-image: linear-gradient(310deg,#5951a6,#2f277e);
+    border: 0 transparent;
+    border-radius: 3px;
+    box-shadow: 0 4px 6px rgba(50,50,93,.1), 0 1px 3px rgba(0,0,0,.08);
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px;
+    text-decoration: none;
+    transition: all .15s ease-in;
+    vertical-align: middle;
+    position: relative;
+}
+
+.smartaipress-content-generator-button > img {
+    background-image: none !important;
+    vertical-align: sub !important;
+    height: 16px !important;
+    width: 16px !important;
+}
+
+.smartaipress-content-generator-button:focus {
+    box-shadow: 0 0 0 1px #332b7b, 0 0 2px 1px #332b7b;
+    color: #f6f6f6;
+}
+
+.smartaipress-content-generator-button:disabled,
+.smartaipress-content-generator-button.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.smartaipress-content-generator-button:hover {
+    color: #fff;
+}
+
+@keyframes sapPlaceHolderShimmer{
+    0%{
+        background-position: -468px 0
+    }
+    100%{
+        background-position: 468px 0
+    }
+}
+
+.smartaipress-image-animated-background {
+    align-items: center;
+    animation-duration: 1.25s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: sapPlaceHolderShimmer;
+    animation-timing-function: linear;
+    background: darkgray;
+    background: linear-gradient(to right, #eeeeee 10%, #dddddd 18%, #eeeeee 33%);
+    background-size: 800px 104px;
+    border: 2px solid #e4e4e4;
+    display: flex;
+    justify-content: center;
+    height: 330px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.smartaipress-error-message {
+    font-size: 14px;
+    color: red;
+}
+
+.smartaipress-content-generator-button:focus {
+    box-shadow: 0 0 0 1px #332b7b, 0 0 2px 1px #332b7b;
+    color: #f6f6f6;
+}
+
+/* Small Popup */
+.smartaipress-openai-small-popup {
+    position: absolute;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    padding: 20px;
+    width: 320px;
+    z-index: 9999;
+    top: 100%;
+    left: 0;
+    margin-top: 10px;
+    z-index: 1059;
+}
+
+.smartaipress-openai-small-popup::before {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 15%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent rgb(255, 255, 255) transparent;
+}
+
+.smartaipress-openai-popup-content label {
+    color: #3c434a;
+}
+
+.smartaipress-openai-popup-content .sap-row,
+#smartaipress-metabox .sap-row,
+#smartaipress_openai_metabox .sap-row {
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.smartaipress-openai-popup-content .sap-row:last-child,
+#smartaipress-metabox .sap-row:last-child,
+#smartaipress_openai_metabox .sap-row:last-child {
+    margin-bottom: 0;
+}
+
+.smartaipress-html-content {
+    max-height: 200px;
+    height:100%;
+}
+
+.smartaipress-html-content h1 {
+    font-size: 1.8rem;
+}
+
+.smartaipress-html-content h2 {
+    font-size: 1.6rem;
+}
+
+.smartaipress-html-content h3 {
+    font-size: 1.4rem;
+}
+
+.smartaipress-html-content h4 {
+    font-size: 1.2rem;
+}
+
+.smartaipress-html-content h5 {
+    font-size: 1rem;
+}
+
+.smartaipress-html-content h6 {
+    font-size: 0.8rem;
+}
+
+#smartaipress-openai-swal {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.smartaipress-openai-swal-content {
+    display: block;
+    text-align: left;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.smartaipress-openai-swal-content label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.smartaipress-openai-swal-content .sap-row {
+    margin-bottom: 10px;
+}
+
+.smartaipress-openai-swal-content .sap-row:last-child {
+    margin-bottom: 0;
+}
+
+.swal2-footer {
+    font-size: 12px;
+    color: red;
+}
